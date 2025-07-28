@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.active hr {
+  display: block;
+}
+
+ul > a hr {
+  display: none;
+}
+
+.bg-primary {
+  background-color: #5F6FFF;
+}

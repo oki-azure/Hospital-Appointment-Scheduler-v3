@@ -11,3 +11,7 @@ ul > a hr {
 .bg-primary {
   background-color: #5F6FFF;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}

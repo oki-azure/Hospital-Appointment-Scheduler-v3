@@ -1,17 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import "tailwindcss";
 
+*{
+    font-family: Outfit;
+}
 .active hr {
-  display: block;
+    display: block;
 }
 
 ul > a hr {
-  display: none;
+    display: none;
 }
 
 .bg-primary {
-  background-color: #5F6FFF;
+    background-color: #5F6FFF;
 }
 
 ::-webkit-scrollbar {
-  display: none;
+    display: none;
+}
+
+@layer utilities {
+    .grid-cols-auto {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
 }

@@ -16,6 +16,14 @@ ul > a hr {
     background-color: #5F6FFF;
 }
 
+.hover\:bg-primary:hover {
+    background-color: #5F6FFF;
+}
+
+.text-primary {
+    color: #5F6FFF;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }

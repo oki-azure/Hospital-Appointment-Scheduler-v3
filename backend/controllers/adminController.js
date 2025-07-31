@@ -11,7 +11,7 @@ import { request } from "express"
 const addDoctor = async (req, res) => {
     try {
         const { name, email, password, speciality, degree, experience, about, fees, address } = req.body 
-        const imageFile = request.file
+        const imageFile = req.file
 
         // checking for all data to add doctor
         if (  !name || !email || !password ||!speciality ||!degree ||!experience ||!about ||!fees ||!address ) {
@@ -67,8 +67,7 @@ const loginAdmin = async (req,res) => {
         const {email,password} = req.body
 
         if (email === process.env.ADMIN_EMAIL && password === process.env.ADMIN_PASSWORD) {
-            
-            const token = jwt.sign(email+password,process.env,JWT_SECRET)
+            const token = jwt.sign(email+password,process.env.JWT_SECRET)
             res.json({success:true,token})
 
         } else {

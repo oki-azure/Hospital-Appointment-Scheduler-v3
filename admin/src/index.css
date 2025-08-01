@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+.bg-primary {
+    background-color: #5F6FFF;
+}
+
+.text-primary {
+    color: #5F6FFF;
+}
+
+.border-primary {
+    color: #5F6FFF;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
